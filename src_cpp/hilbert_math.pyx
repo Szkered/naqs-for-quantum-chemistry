@@ -1,6 +1,7 @@
 import numpy as np
-cimport numpy as cnp
+
 cimport cython
+cimport numpy as cnp
 from cython.parallel cimport prange
 
 #http://nicolas-hug.com/blog/cython_notes

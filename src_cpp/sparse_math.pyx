@@ -1,10 +1,12 @@
 import numpy as np
-cimport numpy as cnp
+
 cimport cython
+cimport numpy as cnp
 from cython.parallel cimport prange
 
-import torch
 import time
+
+import torch
 
 #http://nicolas-hug.com/blog/cython_notes
 

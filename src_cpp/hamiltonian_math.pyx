@@ -1,9 +1,20 @@
 import numpy as np
-cimport numpy as cnp
-cimport cython
-from cython.parallel cimport prange
 
-from libc.stdint cimport uint8_t, uint16_t, uint32_t, uint64_t, int8_t, int16_t, int32_t, int64_t
+cimport cython
+cimport numpy as cnp
+from cython.parallel cimport prange
+from libc.stdint cimport (
+    int8_t,
+    int16_t,
+    int32_t,
+    int64_t,
+    uint8_t,
+    uint16_t,
+    uint32_t,
+    uint64_t,
+)
+
+
 cdef extern int __builtin_popcount(unsigned int) nogil
 cdef extern int __builtin_popcountll(unsigned long long) nogil
 
